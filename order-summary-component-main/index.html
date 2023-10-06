@@ -63,6 +63,9 @@
     justify-content: center;
     align-items: center;
     background-color: hsl(225, 100%, 94%);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   .container {
@@ -143,5 +146,11 @@
  a:hover{
   cursor: pointer;
   text-decoration: none;
+ }
+
+ @media(max-width:375px){
+  body{
+    background-image: url(images/pattern-background-mobile.svg);
+  }
  }
 </style>
