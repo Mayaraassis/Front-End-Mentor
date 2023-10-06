@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="rating">
+      <img class="star" src="/images/icon-star.svg">
+      <h3>
+        How did we do?
+      </h3>
+      <p>
+        Please let us know how we did with your support<br> request. All feedback is appreciated
+        to help us <br>improve our offering!
+      </p>
+
+      <ul class="buttons">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+      </ul>
+      <button class="btn submit_btn">
+        Submit
+      </button>
+    </div>
+      <div class="thanks aparecer">
+        <div class="box">
+          <img src="/images/illustration-thank-you.svg">
+          <p class="selected">
+            You selected <span id="selectedRating"> X </span>&nbsp; out of 5
+          </p>
+        </div>
+        <h2>
+          Thank you!
+        </h2>
+        <p class="text">
+          We appreciate you taking the time to give a rating. <br>If you ever need more support,
+          don’t hesitate to <br>get in touch!
+        </p>
+      </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 12%, 8%);
+    color: white;
+  }
+
+  .rating,
+  .thanks {
+    background-color: hsl(213, 19%, 18%);
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .rating {
+    display: block;
+  }
+
+  .thanks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .aparecer {
+    display: none;
+  }
+
+  .star {
+    background-color: hsl(216, 12%, 54%);
+    padding: 5px;
+    border-radius: 50%;
+  }
+
+  .btn {
+    background-color: hsl(25, 97%, 53%);
+    padding: 8px 30px 8px 30px;
+    width: 100%;
+    border-style: none;
+    border-radius: 16px;
+    color: white;
+    letter-spacing: .1em;
+  }
+
+  .btn:hover {
+    cursor: pointer;
+  }
+
+  ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+    padding: 6px 12px 6px 12px;
+    border-radius: 50%;
+    background-color: hsl(216, 12%, 54%);
+    color: hsl(217, 12%, 63%);
+  }
+
+  ul li.active {
+    background-color: hsl(25, 97%, 53%);
+    transition: all ease-in .1s;
+    color: white;
+  }
+
+  ul li:hover {
+    cursor: pointer;
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+  }
+
+  .buttons {
+    padding: 0;
+  }
+  .text {
+    text-align: center;
+    color: hsl(217, 12%, 63%);
+  }
+
+  .selected {
+    background-color: hsl(216, 12%, 54%);
+    color: hsl(25, 97%, 53%);
+    padding: 8px 30px 8px 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: fit-content;
+  }
+  .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
