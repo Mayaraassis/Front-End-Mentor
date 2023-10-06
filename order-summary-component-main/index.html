@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Order summary card</title>
+
+
+</head>
+
+<body>
+  <div class="container">
+    <img class="hero" src="images/illustration-hero.svg">
+    <div class="text">
+      <h2 class="titulo">
+        Order Summary
+      </h2>
+      <p class="sub">
+        You can now listen to millions <br>
+        of songs, audiobooks, and podcasts on<br> any
+        device anywhere you like!
+      </p>
+
+      <div class="plan">
+        <img src="images/icon-music.svg">
+        <div class="annual_plan">
+          <h3>
+            Annual Plan
+          </h3>
+          <p class="price">
+            $59.99/year
+          </p>
+        </div>
+        <a href="#">
+          Change
+        </a>
+      </div>
+      <div class="btns">
+        <button class="proceed">
+          Proceed to Payment
+        </button>
+        <button class="cancel">
+          Cancel Order
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 94%);
+  }
+
+  .container {
+    text-align: center;
+    background-color: white;
+    border-radius: 16px;
+  }
+
+  .plan {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+    margin: 16px;
+  }
+
+  .btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+  }
+
+  .proceed {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border-style: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 29px -18px hsl(245, 75%, 52%);
+  }
+  .proceed:hover{
+    cursor: pointer;
+    background-color: hsl(245, 62%, 35%) ;
+  }
+  .cancel {
+    border-style: none;
+    font-size: 18px;
+    color: hsl(224, 23%, 55%);
+    font-weight: bold;
+    background-color: white;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .cancel:hover{
+    cursor: pointer;
+    color: hsl(223, 47%, 23%);
+  }
+  .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+ .hero{
+    width: 350px;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+ }
+ .annual_plan{
+ margin:0px 16px 0px 16px;
+ }
+ h3, p{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+ }
+ p{
+  color: hsl(224, 23%, 55%);
+ }
+ h3, h2{
+  color: hsl(223, 47%, 23%);
+ }
+ a:hover{
+  cursor: pointer;
+  text-decoration: none;
+ }
+</style>
