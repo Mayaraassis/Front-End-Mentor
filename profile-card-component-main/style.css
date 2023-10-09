@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom;
+    background-size: 40% auto, 40% auto;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.nome {
+    display: flex;
+}
+
+.metrics {
+    display: flex;
+    margin: 40px;
+    padding-bottom: 20px;
+}
+
+.box {
+    margin-right: 30px;
+}
+
+.up {
+    height: 120px;
+    background-image: url(images/bg-pattern-card.svg);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.down {
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.image {
+    text-align: center;
+}
+
+img {
+    border-radius: 50%;
+    margin-top: -50px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 18px;
+    color: hsl(229, 23%, 23%);
+}
+
+.age {
+    color: hsl(227, 10%, 46%);
+}
+
+.London {
+    color: hsl(227, 10%, 46%);
+}
+
+.number {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.met {
+    color: hsl(227, 10%, 46%);
+}
+
+hr {
+    border-style: none;
+    height: 1px;
+    background-color: hsl(0, 0%, 59%);
+}
