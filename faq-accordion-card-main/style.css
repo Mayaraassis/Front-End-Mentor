@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    font-size: 12px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 60px 40px 60px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+    z-index: 1000;
+   
+}
+.woman_dk{
+    margin-left: -130px;
+}
+.left {
+    width: 400px;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 40px;
+}
+
+.faq-lista {
+    width: 400px;
+}
+
+.woman{
+    position: relative;
+}
+
+.woman_m{
+    display: none;
+}
+.box {
+    position: absolute;
+    top: 45%;
+    left: 20%;
+}
+h1{
+    font-size: 36px;
+    text-align: center;
+    color: hsl(238, 29%, 16%) ;
+}
+dt{
+    color: hsl(237, 12%, 33%);
+    font-size: 14px;
+}
+dd{
+    color: hsl(240, 6%, 50%);
+    padding: 8px 0 8px 0;
+}
+
+dt:hover{
+    color: hsl(14, 88%, 65%);
+    cursor: pointer;
+}
+.active{
+    color: hsl(238, 29%, 16%);
+    font-weight: bold;
+}
+hr{
+    height: 1px;
+    border-style: none;
+    background-color: hsl(240, 5%, 91%);
+}
+dd{
+    display: none;
+    margin-left: 0;
+}
+
+@media(max-width:375px){
+
+.container{
+    flex-direction: column;
+    width: 200px;
+    height: 70%;
+    text-align: center;
+    margin-top: 100px;
+}
+.woman,.box{
+    display: none;
+}
+dl{
+   width: 100%;
+}
+.left{
+    background-image: url(images/bg-pattern-mobile.svg);
+    position: relative;
+
+}
+hr{
+    width: 60%;
+}
+.woman_m{
+    display: block;
+    position:absolute;
+    width: 300px;
+    top: -20px;
+}
+
+dd{
+    max-width: 200px;
+    text-align: start;
+}
+
+}
