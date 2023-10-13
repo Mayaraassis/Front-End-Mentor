@@ -7,6 +7,9 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 14px;
+    background-image: url(images/bg-pattern-bottom-desktop.svg), url(images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right bottom, left top;
 }
 p,h1{
     margin: 0;
@@ -19,9 +22,9 @@ p,h1{
     background-color: hsl(300, 43%, 22%);
     width: 200px;
     height: 150px;
-    margin-right: 10px;
+    margin-right: 20px;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 5px;
     color: white;
 }
 
@@ -30,7 +33,7 @@ p,h1{
     justify-content: space-between;
 }
 .text{
-    width: 350px;
+    max-width: 350px;
 }
 .star{
     background-color: hsl(300, 24%, 96%);
@@ -73,4 +76,41 @@ p,h1{
 .super{
     display: flex;
     margin-bottom: 20px;
+}
+.irene{
+    margin-top: 20px;
+}
+.anne{
+    margin-top: 40px;
+}
+@media(max-width:375px){
+    .container{
+        height: 100vh;
+    }
+    .boxes{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .head{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .star{
+        margin: 15px 0px;
+    }
+    .text{
+        width: 250px;
+        margin-top: 50px;
+    }
+    .head_sub{
+        margin: 0;
+    }
+    .title{
+        font-size: 40px;
+    }
+    .anne{
+        margin-bottom: 50px;
+    }
 }
