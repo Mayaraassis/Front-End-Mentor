@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+p,h1{
+    margin: 0;
+    padding: 0;
+}
+.boxes {
+    display: flex;
+}
+.box{
+    background-color: hsl(300, 43%, 22%);
+    width: 200px;
+    height: 150px;
+    margin-right: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+.text{
+    width: 350px;
+}
+.star{
+    background-color: hsl(300, 24%, 96%);
+    padding: 16px 16px 16px 16px;
+    margin-bottom: 10px;
+    color: hsl(300, 43%, 22%);
+    font-weight: bold;
+    display: flex;
+    border-radius: 8px;
+}
+.rated{
+    margin-left: 8px;
+}
+.title {
+    font-size: 48px;
+    color: hsl(300, 43%, 22%);
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+.head_sub{
+    color: hsl(303, 10%, 53%);
+    margin-bottom: 80px;
+
+}
+.guru{
+    margin-left: 30px;
+}
+.tech{
+    margin-left: 60px;
+}
+.nome{
+    font-weight: bold;
+    margin-left: 15px;
+}
+.sub{
+    color: hsl(333, 80%, 67%);
+    font-weight: bold;
+    margin-left: 15px;
+}
+.super{
+    display: flex;
+    margin-bottom: 20px;
+}
