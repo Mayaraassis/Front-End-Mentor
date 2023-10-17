@@ -16,7 +16,7 @@
 
   <div class="container">
     <div class="left">
-      <img src="images/logo.svg">
+      <img class="logo" src="images/logo.svg">
       <h1 class="title">
         <span class="title_span">
           We're
@@ -28,15 +28,22 @@
         Add your email below to stay up-to-date with announcements and our launch deals.
 
       </p>
-      <input class="mail" type="text" placeholder=" Email Address">
-     
+      <form action="" class="form_box">
+        <input class="mail" id="user_mail" type="mail" placeholder=" Email Address">
+        <img class="error" id="error" src="images/icon-error.svg">
+        <button class="arrow_btn" id="submit_btn">
+          <img src="images/icon-arrow.svg">
+        </button>
+      </form>
+      <span class="msg" id="msg">Please provide a valid email</span>
+
     </div>
     <div class="right">
       <img class="desktop" src="images/hero-desktop.jpg">
       <img class="mobile" src="images/hero-mobile.jpg">
     </div>
   </div>
-
+<script src="script.js"></script>
 </body>
 
 </html>
