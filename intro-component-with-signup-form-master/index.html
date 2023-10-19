@@ -30,11 +30,30 @@
       </div>
 
       <form action="" class="form">
-        <input type="text" name="name" id="name" placeholder="Name">
-        <input type="text" name="lastname" id="lastname" placeholder="Last Name">
-        <input type="mail" name="mail" id="mail" placeholder="Email Address">
-        <input type="password" name="password" id="password" placeholder="Password">
-        <button type="submit" class="subBtn">
+        <div class="nameB">
+          <input type="text" name="name" id="name" placeholder="Name">
+          <img src="images/icon-error.svg" class="error error_name">
+          <p class="error_name" style="color: hsl(0, 100%, 74%); font-size: 11px; margin: 0; text-align: end; padding-right: 25px;">First Name cannot be empty</p>
+        </div>
+        <div class="lastB">
+          <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+          <img src="images/icon-error.svg" class="error error_last">
+          <p class="error_last" style="color: hsl(0, 100%, 74%); font-size: 11px; margin: 0; text-align: end; padding-right: 25px;">Last Name cannot be empty</p>
+
+        </div>
+        <div class="mailB">
+          <input  type="mail" name="mail" id="mail" placeholder="Email Address">
+          <img src="images/icon-error.svg" class="error error_mail">
+          <p class="error_mail" style="color: hsl(0, 100%, 74%); font-size: 11px; margin: 0; text-align: end; padding-right: 25px;">Looks like this is not an email</p>
+
+        </div>
+        <div class="passB">
+          <input type="password" name="password" id="password" placeholder="Password">
+          <img src="images/icon-error.svg" class="error error_password">
+          <p class="error_password" style="color: hsl(0, 100%, 74%); font-size: 11px; margin: 0; text-align: end; padding-right: 25px;">Password cannot be empty</p>
+
+        </div>
+        <button type="submit" class="subBtn" id="btn">
           Claim your free trial
         </button>
         <p style="color: hsl(246, 25%, 77%); font-size: 11px; font-weight: bold;">
