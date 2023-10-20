@@ -11,6 +11,7 @@ const error_password = document.getElementsByClassName('error_password');
 
 btn.addEventListener('click', (event)=>{
     event.preventDefault();
+    let reg = /\S+@\S+\.\S+/;
     if(name.value == ''){
         error_name[0].style.display = 'block'
         error_name[1].style.display = 'block'
@@ -19,7 +20,7 @@ btn.addEventListener('click', (event)=>{
         error_last[0].style.display = 'block'
         error_last[1].style.display = 'block'
     }
-    if(mail.value == ''){
+    if(!reg.test(mail.value)){
         error_mail[0].style.display = 'block'
         error_mail[1].style.display = 'block'
     }
