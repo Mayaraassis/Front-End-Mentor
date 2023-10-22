@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: hsl(0, 0%, 59%);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dash{
+    width: 80%;
+}
+h1{
+    color: hsl(209, 33%, 12%)    ;
+}
+input{
+    padding: 8px 48px 8px 48px;
+    border-radius: 16px;
+    border: 1px solid hsla(0, 0%, 59%, 0.561);
+}
+.btn{
+    background-color: hsl(223, 87%, 63%);
+    color: hsl(222, 100%, 98%);
+    padding: 10px 32px 10px 32px;
+    border-radius: 16px;
+    border-style: none;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: hsla(223, 87%, 63%, 0.761);
+}
+.text{
+    margin-bottom: 40px;
+}
+#error{
+    font-size: small;
+    color: hsla(354, 100%, 66%, 0.78);
+    text-align: start;
+    margin-top: 4px;
+    padding-left: 16px;
+    display: none;
+}
+.hasError{
+    border-color: #f00;
+}
