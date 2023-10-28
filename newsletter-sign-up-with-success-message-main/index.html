@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+</head>
+
+<body>
+
+  <!-- Sign-up form start -->
+  <div class="container">
+
+
+    <div class="image">
+      <img class="img_mob" src="/assets/images/illustration-sign-up-mobile.svg">
+      <img class="img_desk" src="/assets/images/illustration-sign-up-desktop.svg">
+
+    </div>
+    <div class="text">
+
+      <h1>
+        Stay updated!
+      </h1>
+
+      <p>
+        Join 60,000+ product managers receiving monthly updates on:
+      </p>
+      <div class="list">
+        <div class="item">
+          <img class="icon" src="./assets/images/icon-list.svg" alt="">
+          <p>
+            Product discovery and building what matters
+          </p>
+        </div>
+        <div class="item">
+          <img class="icon" src="./assets/images/icon-list.svg" alt="">
+          <p>
+            Measuring to ensure updates are a success
+          </p>
+        </div>
+        <div class="item">
+          <img class="icon" src="./assets/images/icon-list.svg" alt="">
+          <p>
+            And much more!
+          </p>
+        </div>
+
+      </div>
+      <div class="email">
+        <label for="mail" style="font-weight: bold;">
+          Email address
+        </label>
+        <input type="mail" placeholder=" email@company.com">
+      </div>
+      <button class="btn">
+        Subscribe to monthly newsletter
+      </button>
+    </div>
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+    <div class="success">
+
+      Thanks for subscribing!
+
+      A confirmation email has been sent to ash@loremcompany.com.
+      Please open it and click the button inside to confirm your subscription.
+
+      Dismiss message
+    </div>
+    <!-- Success message end -->
+  </div>
+</body>
+
+</html>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: hsl(235, 18%, 26%);
+  }
+
+  .img_desk,
+  .success {
+    display: none;
+  }
+
+  .item {
+    display: flex;
+  }
+
+  .icon {
+    margin-right: 10px;
+  }
+
+  .text {
+    max-width: 80%;
+    margin-left: 20px;
+    text-align: start;
+  }
+
+  .btn {
+    padding: 15px;
+    border-style: none;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    border-radius: 8px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .btn:hover{
+    cursor: pointer;
+  }
+  .email{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  input{
+    padding: 10px;
+    margin-top: 10px;
+  }
+</style>
+
+<script>
+
+</script>
