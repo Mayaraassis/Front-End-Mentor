@@ -16,60 +16,71 @@
 
   <!-- Sign-up form start -->
   <div class="container">
-    <div class="image">
-      <img class="img_mob" src="/assets/images/illustration-sign-up-mobile.svg">
-      <img class="img_desk" src="/assets/images/illustration-sign-up-desktop.svg">
-    </div>
-    <div class="text">
-      <h1 class="title">
-        Stay updated!
-      </h1>
+    <div class="containerSign" id="containerSign">
+      <div class="sign" id="sign">
+        <div class="image">
+          <img class="img_mob" src="/assets/images/illustration-sign-up-mobile.svg">
+          <img class="img_desk" src="/assets/images/illustration-sign-up-desktop.svg">
+        </div>
+        <div class="text">
+          <h1 class="title">
+            Stay updated!
+          </h1>
 
-      <p>
-        Join 60,000+ product managers receiving monthly updates on:
-      </p>
-      <div class="list">
-        <div class="item">
-          <img class="icon" src="./assets/images/icon-list.svg" alt="">
           <p>
-            Product discovery and building what matters
+            Join 60,000+ product managers receiving monthly updates on:
           </p>
-        </div>
-        <div class="item">
-          <img class="icon" src="./assets/images/icon-list.svg" alt="">
-          <p>
-            Measuring to ensure updates are a success
-          </p>
-        </div>
-        <div class="item">
-          <img class="icon" src="./assets/images/icon-list.svg" alt="">
-          <p>
-            And much more!
-          </p>
-        </div>
+          <div class="list">
+            <div class="item">
+              <img class="icon" src="./assets/images/icon-list.svg" alt="">
+              <p>
+                Product discovery and building what matters
+              </p>
+            </div>
+            <div class="item">
+              <img class="icon" src="./assets/images/icon-list.svg" alt="">
+              <p>
+                Measuring to ensure updates are a success
+              </p>
+            </div>
+            <div class="item">
+              <img class="icon" src="./assets/images/icon-list.svg" alt="">
+              <p>
+                And much more!
+              </p>
+            </div>
 
+          </div>
+          <div class="email">
+            <label for="mail" style="font-weight: bold;">
+              Email address
+            </label>
+            <input type="mail" placeholder=" email@company.com">
+          </div>
+          <button class="btn" id="submit">
+            Subscribe to monthly newsletter
+          </button>
+        </div>
       </div>
-      <div class="email">
-        <label for="mail" style="font-weight: bold;">
-          Email address
-        </label>
-        <input type="mail" placeholder=" email@company.com">
-      </div>
-      <button class="btn">
-        Subscribe to monthly newsletter
-      </button>
     </div>
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
-    <div class="success">
+    <div class="success" id="success">
 
-      Thanks for subscribing!
-
-      A confirmation email has been sent to ash@loremcompany.com.
-      Please open it and click the button inside to confirm your subscription.
-
-      Dismiss message
+      <img src="./assets/images/icon-success.svg" alt="" style="width: 48px;">
+      <h1 style="font-size: 48px;">
+        Thanks for subscribing!
+      </h1>
+      <p>
+        A confirmation email has been sent to <span style="font-weight: bold;">
+          ash@loremcompany.com.
+        </span>
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+      <button class="btn" id="dismiss">
+        Dismiss message
+      </button>
     </div>
     <!-- Success message end -->
   </div>
@@ -89,13 +100,31 @@
     color: hsl(235, 18%, 26%);
     background-color: hsl(235, 18%, 26%);
   }
-  .container{
+
+  .container {
     background-color: white;
-    height: 60%;
   }
+
+
+  .containerSign {
+    display: block;
+  }
+
+  .sign {
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+    padding-bottom: 30px;
+  }
+
   .img_desk,
   .success {
     display: none;
+  }
+
+  .success {
+    max-width: 300px;
+    margin: 40px;
   }
 
   .item {
@@ -121,46 +150,61 @@
     margin-top: 20px;
     width: 100%;
   }
-  .btn:hover{
+
+  .btn:hover {
     cursor: pointer;
+    background-color: hsl(4, 100%, 67%);
   }
-  .email{
+
+  .email {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
   }
-  input{
+
+  input {
     padding: 10px;
     margin-top: 10px;
   }
-  
-  @media(min-width:765px){
-    .container{
+
+  @media(min-width:765px) {
+    .container {
       display: flex;
       flex-direction: row-reverse;
       align-items: center;
       border-radius: 20px;
     }
-    .img_mob{
+
+    .img_mob {
       display: none;
     }
-    .img_desk{
+
+    .img_desk {
       display: block;
-      width: 80%;
       height: 90%;
     }
 
-    .title{
+    .title {
       font-size: 52px;
     }
+
     .text {
       max-width: 60%;
       margin-right: 60px;
     }
-    .btn{
+
+    .sign {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      margin: 15px;
+    }
+
+    .btn {
       width: 80%;
     }
-    input{
+
+    input {
       width: 74%;
     }
   }
@@ -168,4 +212,20 @@
 
 <script>
 
+  const dismiss = document.getElementById('dismiss');
+  const submit = document.getElementById('submit');
+  const sign = document.getElementById('containerSign');
+  const success = document.getElementById('success');
+
+  dismiss.addEventListener('click', (event) => {
+    event.preventDefault();
+    sign.style.display = 'block';
+    success.style.display = 'none';
+  });
+
+  submit.addEventListener('click', (event) => {
+    event.preventDefault();
+    sign.style.display = 'none';
+    success.style.display = 'block';
+  })
 </script>
